@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #4B0082;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.search-bar {
+    width: 704px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    padding-right: 40px;
+}
+
+.search-button {
+    position: absolute;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #4B0082;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-icon {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-icon i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.cart-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+}
+
+.cart-button:hover {
+    color: #cccccc;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #4B0082;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.video-section {
+    text-align: center;
+    margin-bottom: 40px; /* Espaço entre o vídeo e as barrinhas */
+}
+
+.video-container {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border: 15px solid #4B0082; /* Borda roxa */
+    padding: 10px; /* Espaço entre a borda e o vídeo */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container iframe {
+    border-radius: 5px; /* Bordas arredondadas para o vídeo */
+}
+
+.produto {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os quadrados */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px; /* Espaçamento extra em cima das barrinhas */
+}
+
+.barrinha {
+    border: 10px solid #4B0082; /* Borda roxa ao redor da barrinha */
+    padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas para o quadrado roxo */
+    width: 300px;
+    background-color: #ffffff; /* Fundo branco da barrinha */
+    text-align: center;
+    position: relative;
+}
+
+.barrinha img {
+    width: 100%; /* Ajusta a largura da imagem ao tamanho da barrinha */
+    height: auto;
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+.barrinha h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #4B0082; /* Texto roxo */
+}
+
+.barrinha button {
+    background-color: #4B0082; /* Fundo roxo do botão */
+    color: #ffffff; /* Texto branco do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Espaço acima do botão */
+}
+
+.barrinha button i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto do botão */
+}
+
+.barrinha button:hover {
+    background-color: #3A0066; /* Cor de fundo do botão ao passar o mouse */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Faz o main crescer para preencher o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Adiciona estilos para os itens do carrinho */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 5px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #4B0082;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+/* Adiciona estilos para a barra de pesquisa, se necessário */
+.search-bar {
+    width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4B0082;
+    color: #000000;
+}
+
+.search-button {
+    background-color: #4B0082;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+/* Estilos para formulários */
+.form-section {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4B0082;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-section button:hover {
+    background-color: #3A0066;
+}
+
+.form-section p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-section a {
+    color: #4B0082;
+    text-decoration: none;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}

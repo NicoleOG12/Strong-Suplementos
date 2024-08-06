@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Barrinhas de Cereais</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="access.js" defer></script>
+    <script src="search.js" defer></script>
+    <!-- Adicione a biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Logo.png" alt="Logo" class="logo">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Encontre o suplemento ideal para você" class="search-bar">
+                <button class="search-button" onclick="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <a href="login.html" class="header-icon">
+                <i class="fas fa-user"></i> Faça seu login
+            </a>
+            <a href="https://www.instagram.com/seu_perfil" target="_blank" class="header-icon">
+                <i class="fab fa-instagram"></i> Siga-nos no Instagram
+            </a>
+            <button class="cart-button" onclick="showCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="video-section">
+            <h2>Assista ao nosso vídeo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/seu_video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="produto">
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="barrinha" data-sabor="Chocolate">
+                <div class="barrinha-content">
+                    <img src="Barrinha.png" alt="Barrinha de Chocolate">
+                    <h2>Candy Bomb - Sabor Chocolate</h2>
+                    <button onclick="comprar('Chocolate')">Comprar</button>
+                    <button onclick="adicionarAoCarrinho('Chocolate')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Venda de Barrinhas de Cereais</p>
+    </footer>
+</body>
+</html>
