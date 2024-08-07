@@ -7,7 +7,7 @@ window.onload = function() {
         listItem.classList.add('cart-item');
 
         const itemImage = document.createElement('img');
-        itemImage.src = `Barrinha.png`; // Atualize com base nas imagens associadas
+        itemImage.src = `Barrinha.png`; 
         itemImage.alt = `Imagem de ${item}`;
         itemImage.classList.add('cart-item-image');
 

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerForm = document.getElementById('register-form');
     
     registerForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Previne o comportamento padrão de enviar o formulário
+        event.preventDefault(); 
         
         const username = document.getElementById('new-username').value;
         const password = document.getElementById('new-password').value;
@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Aqui você pode adicionar a lógica para o cadastro, por exemplo, enviar os dados para um servidor.
-        // Exemplo de mensagem de sucesso:
         alert('Cadastro realizado com sucesso!');
-        window.location.href = 'login.html'; // Redireciona para a página de login após o cadastro
+        window.location.href = 'login.html'; 
     });
 });

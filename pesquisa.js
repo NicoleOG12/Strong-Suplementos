@@ -5,9 +5,9 @@ function searchProducts() {
     products.forEach(product => {
         const sabor = product.getAttribute('data-sabor').toLowerCase();
         if (sabor.includes(searchTerm)) {
-            product.style.display = 'block'; // Exibe o produto
+            product.style.display = 'block';
         } else {
-            product.style.display = 'none'; // Oculta o produto
+            product.style.display = 'none'; 
         }
     });
 }
